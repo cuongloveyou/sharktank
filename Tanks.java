@@ -1,14 +1,16 @@
-package Item;
+package SharkTank;
 
+
+import java.awt.Image;
 import java.awt.Rectangle;
 
 public class Tanks extends Item {
 	public int heart, dame, direction, armor;
 	boolean rocket;
-	
+	Image image;
 	//contruct function
-	public Tanks(int x, int y, int size, int id, int heart, int dame, int direction, int armor, boolean rocket ) {
-		super(x, y, size,id);
+	public Tanks(int id, int x, int y, int size, Image image, int heart, int dame, int direction, int armor, boolean rocket) {
+		super(id, x, y, size, image);
 		this.heart = heart;
 		this.armor = armor;
 		this.dame = dame;
